@@ -5,5 +5,6 @@ public class Main {
 
         TestClass testClass = (new Injector()).inject(new TestClass());
         testClass.func();
+
     }
 }
