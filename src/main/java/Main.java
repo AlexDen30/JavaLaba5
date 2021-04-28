@@ -1,9 +1,9 @@
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException, InstantiationException, ClassNotFoundException {
 
-        System.out.println("eeeeeee");
-
+        TestClass testClass = (new Injector()).inject(new TestClass());
+        testClass.func();
     }
 }
